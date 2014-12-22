@@ -19,12 +19,14 @@ import org.eclipse.smarthome.core.thing.UID;
  */
 public class ChannelTypeUID extends UID {
 
-
     /**
-     * Creates a new instance of this class with the specified parameter.
-     * 
-     * @param channelUid the UID for the channel
+     * Default constructor in package scope only. Will allow to instantiate this
+     * class by reflection. Not intended to be used for normal instantiation.
      */
+    ChannelTypeUID() {
+        super();
+    }
+
     public ChannelTypeUID(String channelUid) {
         super(channelUid);
     }
