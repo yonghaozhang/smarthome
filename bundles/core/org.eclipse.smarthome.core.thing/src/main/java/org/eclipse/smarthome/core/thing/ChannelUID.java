@@ -20,6 +20,8 @@ import java.util.List;
  */
 public class ChannelUID extends UID {
 
+    private static final String CHANNEL_GROUP_SEPERATOR = "#";
+
     /**
      * Default constructor in package scope only. Will allow to instantiate this
      * class by reflection. Not intended to be used for normal instantiation.
@@ -27,8 +29,6 @@ public class ChannelUID extends UID {
     ChannelUID() {
         super();
     }
-
-    private static final String CHANNEL_GROUP_SEPERATOR = "#";
 
     public ChannelUID(String channelUid) {
         super(channelUid);
